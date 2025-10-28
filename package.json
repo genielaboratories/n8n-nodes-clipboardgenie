@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-clipboardgenie",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "n8n community node integrating the Clipboard Genie Windows desktop app — send clipboard items and desktop notifications from your workflows.",
 	"license": "MIT",
 	"homepage": "https://clipboardgenie.com",
