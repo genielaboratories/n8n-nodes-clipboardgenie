@@ -145,5 +145,3 @@ Clipboard Genie uses API key authentication for all n8n integrations.
 | **0.1.0** | Initial release with two operations:<br>– Item → Create Text Item<br>– Notification → Show |
 
 ---
-
-
