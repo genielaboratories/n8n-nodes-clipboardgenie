@@ -1,0 +1,60 @@
+{
+	"name": "n8n-nodes-clipboardgenie",
+	"version": "0.1.0",
+	"description": "n8n community node integrating the Clipboard Genie Windows desktop app — send clipboard items and desktop notifications from your workflows.",
+	"license": "MIT",
+	"homepage": "https://clipboardgenie.com",
+	"keywords": [
+    "n8n",
+    "n8n-community-node-package",
+    "clipboard",
+    "windows",
+    "notifications"
+	],
+	"author": {
+		"name": "Clipboard Genie Team",
+		"email": "team@clipboardgenie.com",
+    "url": "https://clipboardgenie.com/contact"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/genielaboratories/n8n-nodes-clipboardgenie.git"
+	},
+  "bugs": {
+    "url": "https://github.com/genielaboratories/n8n-nodes-clipboardgenie/issues"
+  },
+  "publishConfig": { "access": "public" },
+  "engines": { "node": ">=20" },
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist", "README.md", "LICENSE"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/ClipboardGenieApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/ClipboardGenie/ClipboardGenie.node.js"
+		]
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.7",
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"release-it": "^19.0.4",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
