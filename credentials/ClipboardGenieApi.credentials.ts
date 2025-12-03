@@ -40,7 +40,7 @@ export class ClipboardGenieApi implements ICredentialType {
 			url: "/n8n/me",
 			method: "GET",
 			headers: {
-				Authorization: "Bearer {{$credentials.apiKey}}",
+				Authorization: "=Bearer {{$credentials.accessToken}}",
 			},
 		},
 	};

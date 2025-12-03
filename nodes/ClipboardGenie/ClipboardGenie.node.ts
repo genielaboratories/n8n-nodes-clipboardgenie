@@ -186,6 +186,7 @@ export class ClipboardGenie implements INodeType {
 			// Push results
 			const executionItem = {
 				json: responseData as IDataObject,
+        pairedItem: { item: i },
 			};
 			returnData.push(executionItem);
 		}
