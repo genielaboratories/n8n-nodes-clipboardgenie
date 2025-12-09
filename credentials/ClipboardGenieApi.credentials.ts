@@ -39,9 +39,6 @@ export class ClipboardGenieApi implements ICredentialType {
 			baseURL: "https://api.clipboardgenie.com/api",
 			url: "/n8n/me",
 			method: "GET",
-			headers: {
-				Authorization: "=Bearer {{$credentials.accessToken}}",
-			},
 		},
 	};
 }
